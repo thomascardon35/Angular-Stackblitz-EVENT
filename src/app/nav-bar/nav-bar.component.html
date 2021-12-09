@@ -1,0 +1,8 @@
+<nav>
+  <app-nav-item
+    *ngFor="let link of listLinks"
+    [item]="link"
+    (eventEmitter)="addItem($event)"
+  ></app-nav-item>
+</nav>
+<div>Clicked item : {{ message }}</div>
