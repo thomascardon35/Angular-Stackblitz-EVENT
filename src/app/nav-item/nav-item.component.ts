@@ -13,7 +13,7 @@ export class NavItemComponent implements OnInit {
   constructor() {}
 
   addTitle(itemNav: string) {
-    this.eventEmitter.emit(`L'item ${itemNav} à été cliqué`);
+    this.eventEmitter.emit(`L'item ${itemNav} a été cliqué`);
   }
 
   ngOnInit() {}

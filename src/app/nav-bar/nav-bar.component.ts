@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-bar.component.css'],
 })
 export class NavBarComponent implements OnInit {
-  message = 'none';
+  showClickedItem = 'none';
 
   addItem(mess: string) {
-    this.message = mess;
+    this.showClickedItem = mess;
   }
 
   listLinks = [
@@ -35,7 +35,7 @@ export class NavBarComponent implements OnInit {
     },
   ];
 
-  showClickedItem = 'none';
+
 
   constructor() {}
 
